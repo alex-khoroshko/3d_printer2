@@ -6,4 +6,10 @@ module pulley () {
 
 $fn=100;
 
-pulley ();
+difference () {
+    pulley ();
+    linear_extrude(height=5)
+    circle(r=12);
+    linear_extrude(height=6)
+    circle(r=10);
+}
